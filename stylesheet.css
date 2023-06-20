@@ -1,0 +1,143 @@
+html {
+	font-size: 15px;
+}
+
+/*Start The Project*/
+body {
+	background-color: #fff;
+	height: 100vh;
+	font-family: "Hanken Grotesk", sans-serif;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 75%;
+	height: fit-content;
+	display: grid;
+	grid-template: repeat(2, auto) / repeat(3, 1fr);
+}
+
+main div.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+	grid-area: 2 / 1 / 3 / 4;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+main > div:nth-child(-n + 3) {
+	padding: 15% 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+main > div:nth-child(-n + 3) img {
+	margin: 5% 0px;
+}
+
+main > div:nth-child(-n + 3) h1 {
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+	font-family: "Big Shoulders Display", sans-serif;
+	font-size: 2.5rem;
+	margin: 5% 0px;
+}
+
+main > div:nth-child(-n + 3) p {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 1rem;
+	margin-bottom: 5%;
+}
+
+main > div:nth-child(-n + 3) button {
+	margin-top: 30%;
+	width: 70%;
+	min-width: 100px;
+	background-color: hsl(0, 0%, 95%);
+	border: none;
+	height: 40px;
+	border-radius: 20px;
+	font-family: "Lexend Deca", sans-serif;
+	transition: 0.5s ease all;
+	cursor: pointer;
+}
+
+main > div:nth-child(-n + 3) button:hover {
+	border: 2px hsl(0, 0%, 95%) solid;
+	color: hsl(0, 0%, 95%);
+	background-color: transparent; 
+}
+
+main div:nth-child(1) {
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+main div:nth-child(1) button {
+	color: hsl(31, 77%, 52%);
+}
+
+main div:nth-child(2) {
+	background-color: hsl(184, 100%, 22%);
+}
+
+main div:nth-child(2) button {
+	color: hsl(184, 100%, 22%);
+}
+
+main div:nth-child(3) {
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main div:nth-child(3) button {
+	color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 769px) {
+	main {
+		grid-template: repeat(4, auto) / 100%;
+	}
+
+	main div.attribution {
+		grid-area: 4 / 1 / 5 / 2;
+	}
+
+	main div:nth-child(1) {
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	main div:nth-child(3) {
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	main > div:nth-child(-n + 3) {
+		padding: 5% 20%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+    main > div:nth-child(-n + 3) button {
+    	margin-top: 10%; 
+    	margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
